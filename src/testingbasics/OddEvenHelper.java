@@ -1,6 +1,7 @@
 package testingbasics;
 
 import java.util.Scanner;
+import java.lang.Math;
 
 /**
  * Helper methods for determining whether integers are even or odd.
@@ -25,9 +26,14 @@ public class OddEvenHelper {
 
         System.out.print("Enter a number: ");
         int number = scanner.nextInt();
-        System.out.println("It is " + isEven(number) + " that " + number + " is even.");
-        System.out.println("It is " + isOdd(number) + " that " + number + " is odd.");
+        // System.out.println("It is " + isEven(number) + " that " + number + " is even.");
+        // System.out.println("It is " + isOdd(number) + " that " + number + " is odd.");
+
+        if (isOdd(Math.abs(number))) {
+            System.out.println("Wow that's odd");
+        }
 
         scanner.close();
     }
 }
+
